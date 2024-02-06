@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+<body class="font-custom">
+  <div class="bg-[#1f2632] grid h-screen place-items-center">
+    <div class="bg-[#323a49] mx-auto grid place-items-center gap-4 px-6 pt-10 pb-20 rounded-xl relative shadow-md shadow-transparent max-w-[32rem] max-sm:mx-4">
+      <!-- Advice ID goes here -->
+      <h3 class="text-[#52ffa8] text-xs font-semibold tracking-[0.3rem]">ADVICE #<span id="advice-id">117</span></h3>
+      <!-- Advice text goes here -->
+      <p class="text-[#cee3e9] text-[28px] font-semibold">"<span id="advice">It is easy to sit up and take notice,what's difficult is getting up and taking action.</span>"</p>
+      <!-- pattern divider -->
+      <div class="mt-4">
+        <img src="./images/pattern-divider-desktop.svg" alt="">
+      </div>
+      <!-- dice container -->
+      <div class="bg-[#52ffa8] h-16 w-16 grid place-items-center rounded-full absolute -bottom-8 hover:shadow-xl hover:shadow-[#52ffa8] cursor-pointer " id="dice-btn">
+        <img src="./images/icon-dice.svg" class="" id="dice" alt="">
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution text-lg bg-slate-950 w-full text-[#cee3e9] py-14 text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-[#3e52a3]">Frontend Mentor</a>. 
+    Coded by <a href="#" class="text-[#3e52a3]">Syeda Walija Hassan</a>.
+  </div>
+  <!-- javascript -->
+  <script src="./app.js"></script>
+</body>
+</html>
